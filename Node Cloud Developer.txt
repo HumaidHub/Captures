@@ -1,0 +1,44 @@
+Node Cloud Developer
+
+
+npm init
+
+npm i mongoose
+
+npm i underscore --save-dev 
+
+npm i express
+
+npm i jshint --save-dev
+
+npm i nodemon --save-dev
+
+npm install -g nodemon
+
+nodemon index
+
+#npm un nodemon --save-dev
+
+
+#export port=4000  // then{
+const PORT = process.env.PORT || 3000
+app.listen(PORT,()=>console.log('listen http://127.0.0.1:'+PORT))
+}
+
+npm i joi
+
+npm install helmet --save
+
+npm i morgan
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+nodeJS Chat
+https://www.tutorialspoint.com/expressjs/expressjs_environment.htm
+
+npm init   // add packeg json
+{
+package name: (node-w-mysql) nodemysql
+version: (1.0.0)
+description: this is project node with mysql
+entry point: (index.js)
+test command:
+git repository:
+keywords: my,chat,node, mysql
+author: Humaid
+license: (ISC) MIT
+}
+
+npm install --save express
+
+npm install cors --save   // important ,do it there all DOMANS
+
+npm install body-parser --save    // convert anythings at json
+
+npm install ws --save    //web socket
+
+# npm remove ws --save   //remove
+
+npm install socket.io --save
+
+node server
+
+
+
+
+
+
+
+
+
+
+
+
+
+

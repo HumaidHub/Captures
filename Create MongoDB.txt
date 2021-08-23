@@ -1,0 +1,107 @@
+Create MongoDB
+
+
+mongod
+
+#now windows cmd.
+
+mongo
+
+use users   
+
+db
+
+show dbs
+
+db.employees.insert({"name":"humaid"})
+
+show dbs
+
+
+use myuser
+
+db.employees.insert({"name":"humaid"})
+
+db
+
+db.dropDatabase()
+
+db.createCollection('employee')
+
+show collections
+
+db.inf.drop()
+
+db.user.insert({'name':'Humaid','email':'773304556@gmail.com','address':{'phone':773304556,'street':'bahgdad'}})
+
+db.user.insert({'name':'Humaid','email':'773304556@gmail.com','Age':32})
+
+db.user.find()
+
+var names = [{'name':'Humaid','email':'773304556@gmail.com','address':{'phone':773304556,'street':'bahgdad'},'info':{'salary':52000,'job':'database'}}]
+
+var names = [{'name':'humaid','email':'773304556@gmail.com','address':{'phone':773304556,'street':'bahgdad'},'info':{'phone':773304556,'street':'bahgdad'}}]
+
+var names = [{'name':'Humaid','email':'773304556@gmail.com','address':{'phone':773304556,'street':'bahgdad'},'info':{'salary':52000,'job':'database'}},{'name':'GlaLL','email':'773304556@gmail.com','address':{'phone':773304556,'street':'bahgdad'},'info':{'salary':52000,'job':'database'}},{'name':'yusif','email':'yusif2010@gmail@gmail.com','address':{'phone':773304556,'street':'bahgdad'},'info':{'salary':52000,'job':'database'}}]
+
+
+db.user.update({'name':'humaid'},{$set:{'email':'kmal@gmail.com'}})
+
+db.user.find().pretty()
+
+# db.user.update({'name':'humaid'},{$set:{'info':{'street':'sanaa'}}})
+
+db.user.remove({'email':'kmal@gmail.com'})
+
+db.user.insert({'name':'Humaid','email':'773304556@gmail.com','Age':32})
+
+db.user.update({'name':'Humaid'},{$set:{'Age':10}})   //greante
+
+db.user.update({'name':'Humaid'},{$unset:{'Age':1}})  //remove Age
+
+db.user.find({'name':'Humaid'}).pretty()
+
+db.user.update({'name':'wassem'},{'firstname':'waseem','lastname':'kiran'},{upsert:true})   // update or insert
+
+#db.user.find({'firstname':'waseem'}).pretty() // old
+db.user.update({'firstname':'waseem'},{$rename:{'firstname':'name'}})
+db.user.find({'name':'waseem'}).pretty()
+
+db.user.find({age:{$lt:30}}).pretty()  // age < 30
+db.user.find({age:{$gt:30}}).pretty()  // age > 30 
+db.user.find({age:{$gte:44}}).pretty() // age >= 44
+db.user.find({age:{$lte:44}}).pretty() // age <= 44
+
+
+db.user.find({$or:[{'name':'waseem'},{'name':'awaseem'}]}).pretty()
+
+db.user.find().sort({name:1})
+db.user.find().sort({name:-1})
+
+db.user.find().count()
+
+db.user.find({'name':'waseem'}).count()
+
+db.user.find().limit(2)
+
+db.user.find().forEach(function(names){print("name:"+names.name)})  // this is mongoDB can useing javaScript
+
+db.user.remove({"_id" : ObjectId("60e652c0e45599fee350330c")})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

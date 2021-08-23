@@ -1,0 +1,25 @@
+node express
+
+#npm install express -g
+
+npm init
+
+npm install --save express
+
+npm install body-parser --save  
+
+npm install cors --save
+
+npm install cookie-parser --save  
+
+npm install --save multer
+
+#npm install express cors multer --save
+
+npm install express-scaffold   
+
+npm install -g express-generator  
+
+
+
+

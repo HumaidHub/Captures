@@ -1,0 +1,181 @@
+start Laravel with Heroku
+
+https://devcenter.heroku.com/articles/getting-started-with-laravel
+## Must doing in be by the Git  , not use powershell_cmd.
+
+##cd E:/2222/hello_laravel_heroku
+
+composer create-project laravel/laravel --prefer-dist laravelapi
+
+cd hello_laravel_heroku
+
+git init
+
+git add .
+
+git commit -m "new laravel project"
+
+echo "web: vendor/bin/heroku-php-apache2 public/" > Procfile
+
+heroku login
+
+git add .
+
+git commit -m "Procfile for Heroku"
+
+   // heroku --version
+   // npm install -g heroku
+   // heroku login -i  //If you’d prefer to stay in the CLI to enter your credentials
+   // the browser to login or q to exit
+
+heroku
+
+heroku create
+
+php artisan key:generate --show      // show key 
+
+heroku config:set APP_KEY=           // insert key
+   // heroku config:set APP_KEY=base64:rp6Xk5j7m/iKVn+brPVNw1XLB62LOQJqGnYdFVDxiVs=
+   
+git push heroku master
+
+git add .
+
+git commit -m "Procfile for Heroku"
+
+git push heroku master
+
+heroku open
+
+#git pull heroku master 
+ 
+php artisan make:controller PagesController
+
+
+
+##ClearDB MySQL
+heroku config | grep CLEARDB_DATABASE_URL   //show User:Pass@URL
+
+// CLEARDB_DATABASE_URL: mysql://b0e419ab1e5942:5fbaf4e4@us-cdbr-east-04.cleardb.com/heroku_53fa66b05cc0e89?reconnect=true
+
+URL: us-cdbr-east-04.cleardb.com
+namedatabase: heroku_53fa66b05cc0e89
+Username:	b0e419ab1e5942
+Password:	5fbaf4e4 (Reset)
+
+
+DB_CONNECTION=mysql
+DB_HOST=us-cdbr-east-04.cleardb.com
+DB_PORT=3306
+DB_DATABASE=heroku_53fa66b05cc0e89
+DB_USERNAME=b0e419ab1e5942
+DB_PASSWORD=5fbaf4e4
+
+
+
+
+php artisan make:controller PostController
+
+php artisan make:model Post -m 
+
+
+Must:  Add code= Schema::defaultStringLength(190);
+       IN here:   E:\2222\hello_laravel_heroku3_Copy\app\Providers\AppServiceProvider.php
+	   
+	     public function register()
+    {
+        Schema::defaultStringLength(190);
+    }
+	   
+	   
+	   
+php artisan migrate
+
+php artisan migrate:refresh
+
+php artisan tinker
+Post::count() //return count row
+
+Example:
+
+>>> Post::count()
+=> 0
+>>> $post = new Post();
+=> App\Models\Post {#3417}
+>>> $post->subject = 'JAVA';
+=> "JAVA"
+>>> $post->firstname = 'Humaid';
+=> "Humaid"
+>>> $post->lastname = 'salah';
+=> "salah"
+>>> $post->body = 'Java tutorials form zero to hero';
+=> "Java tutorials form zero to hero"
+>>> $post->save();
+=> true
+>>>
+
+Example2:
+>>> $post = new Post();
+=> App\Models\Post {#4206}
+>>> $post->subject = 'JAVA';
+=> "JAVA"
+>>> $post->subject = 'Php';
+=> "Php"
+>>> $post->firstname = 'Muhammed';
+=> "Muhammed"
+>>> $post->lastname = 'salah';
+=> "salah"
+>>> $post->body = 'PHP tutorials form zero to hero';
+=> "PHP tutorials form zero to hero"
+>>> $post->save();
+=> true
+
+composer require laravelcollective/html
+https://laravelcollective.com/docs/6.x/html
+
+#delete PostController then
+php artisan make:controller PostController --resource
+
+php artisan route:list
+# Route::resource('photos', PhotoController::class);
+
+php artisan package:discover --ansi
+
+php artisan make:migration user_id_inside_posts
+
+php artisan make:migration add_post_image_inside_posts
+
+php artisan storage:link
+
+
+
+ ## MUst
+ 
+heroku update
+
+heroku config:add APP_NAME=Humaid
+heroku config:add APP_ENV=poduction
+heroku config:add DB_CONNECTION=mysql
+heroku config:add DB_HOST=us-cdbr-east-04.cleardb.com
+heroku config:add DB_PORT=3306
+heroku config:add DB_DATABASE=heroku_53fa66b05cc0e89
+heroku config:add DB_USERNAME=b0e419ab1e5942
+heroku config:add DB_PASSWORD=5fbaf4e4
+heroku config:add APP_DEBUG=true
+
+
+
+
+heroku run bash
+ls
+exit
+
+heroku run php artisan migrate
+
+
+
+
+
+
+
+

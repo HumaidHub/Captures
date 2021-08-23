@@ -1,0 +1,90 @@
+
+
+
+npm ERR! code ECONNRESET
+npm ERR! network aborted
+npm ERR! network This is a problem related to network connectivity.
+npm ERR! network In most cases you are behind a proxy or have bad network settings.
+npm ERR! network
+npm ERR! network If you are behind a proxy, please make sure that the
+npm ERR! network 'proxy' config is set properly.  See: 'npm help config'
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\hp\AppData\Local\npm-cache\_logs\2021-06-17T01_33_18_151Z-debug.log
+
+
+
+
+npm config set registry http://registry.npmjs.org/
+
+
+
+npm config get proxy
+npm config rm proxy
+npm config rm https-proxy
+
+
+npm config set https-proxy https://1.1.1.1:8080
+npm config set proxy "http://1.1.1.1:80"
+
+npm config set strict-ssl false
+
+
+proxy = http://1.1.1.1:3128/
+https_proxy = http://1.1.1.1:3128/
+strict-ssl = false
+ca = null
+registry = http://registry.npmjs.org/
+
+npm config get proxy
+npm config get https-proxy
+
+
+npm config set https-proxy https://username:password@proxy.company.com:6050
+npm config set proxy http://username:password@proxy.company.com:6050
+npm config set registry http://registry.npmjs.org/
+
+
+
+
+
+npm config edit
+ -i removed those three lines
+npm config set proxy http://localhost:8080/ npm config set https-proxy http://localhost:8080/ npm config set strict-ssl false
+
+
+please use npm config set proxy http://xx.aa.bb.cc:port it worked for me thanks a lot !
+
+
+
+
+
+
+npm config set proxy http://xxx.xxx.xxx.4:8080   
+npm config set https-proxy http://xxx.xxx.xxx.4:8080
+
+yarn install
+
+npm config rm proxy   
+npm config rm https-proxy
+
+
+
+yarn add
+
+
+proxy = http://1.1.1.1:3128/
+https_proxy = http://1.1.1.1:3128/
+strict-ssl = false
+ca = null
+registry = http://registry.npmjs.org/
+
+
+
+npm ERR! code ETARGET
+npm ERR! notarget No matching version found for watchpack-chokidar2@2.2.0.
+npm ERR! notarget In most cases you or one of your dependencies are requesting
+npm ERR! notarget a package version that doesn't exist.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\hp\AppData\Local\npm-cache\_logs\2021-06-17T03_19_03_367Z-debug.log

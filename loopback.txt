@@ -1,0 +1,43 @@
+
+
+
+#npm install -g @loopback/cli
+
+#lb4 app
+#cd projectName
+
+
+lb4 example todo
+
+cd loopback4-example-todo
+
+npm start
+
+#In a browser, visit http://127.0.0.1:3000/ping
+
+#lb4 controller
+
+node .  // npm start
+
+
+
+
+lb4 example todo
+
+cd loopback4-example-todo
+
+npm start
+
+lb4 model
+
+lb4 datasource
+
+lb4 repository
+
+lb4 controller
+
+npm i @loopback/boot
+
+
+
+

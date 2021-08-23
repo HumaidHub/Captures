@@ -1,0 +1,25 @@
+
+
+##Laravel 8  auth!
+
+
+composer require laravel/breeze --dev
+
+php artisan breeze:install vue
+
+npm install
+
+npm run dev
+
+php artisan migrate
+
+
+ ##Laravel 7  auth!
+
+
+composer create-project laravel/laravel example-app
+
+composer require laravel/ui
+
+php artisan ui bootstrap --auth  //then add bootstrap 4.6 in view/layout/app.blade.php
+

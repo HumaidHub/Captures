@@ -1,0 +1,23 @@
+
+## parint.blade.php
+</html>
+<head>
+// style
+</head>
+
+<body>
+
+@yield('content')
+
+</body>
+</html>
+
+
+
+##child.blade.php
+@extends('layouts.app')
+@section('content')
+
+// table 
+
+@endsection

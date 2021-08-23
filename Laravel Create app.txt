@@ -1,0 +1,65 @@
+First App Laravel:
+
+composer create-project laravel/laravel myFirst2
+
+cd myFirst2
+ 
+php artisan serve
+
+php artisan make:controller adminController
+ 
+php artisan migrate
+ 
+php artisan make:migration create_products   //  نضيف s لقاعدة البيانات
+
+php artisan migrate:rollback
+
+php artisan migrate:refresh
+
+php artisan migrate:status
+
+php artisan make:model Product     //   اول حرف يكون كبتل
+
+php artisan make:controller ProductController   //   اول حرف يكون كبتل
+ 
+
+
+
+
+-- create Auth in laravel 8.x
+composer create-project laravel/laravel web1
+cd web1
+composer require laravel/breeze --dev
+php artisan breeze:install vue
+npm install
+npm run dev
+
+ - php artisan migrate
+{
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=web_site_laravel
+DB_USERNAME=muhammed
+DB_PASSWORD=muhammed
+}
+
+php artisan make:migration create_articlse
+
+php artisan make:migration create_comments
+
+php artisan migrate
+
+php artisan migrate:refresh
+
+php artisan make:model Article
+
+php artisan make:model Comment
+
+php artisan make:controller manage
+
+
+
+
+
+

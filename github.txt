@@ -1,0 +1,71 @@
+import:
+git clone https://github.com/humaid2021/other.git
+git clone https://github.com/humaid2021/other.git myproject2  //import by name myproject2
+
+
+
+create project
+
+
+git init
+
+git add .
+
+git commit -m "first commit"
+
+git branch -M main
+
+git remote add origin https://github.com/humaid2021/laravel_general.git
+
+git push -u origin main
+
+user  :humaido
+by : gutddnlysky448@gmail.com
+pass : 3020etrgood
+
+
+chenege pc:
+
+git status
+
+git add .
+
+git commit -am "commit all"
+
+git log --oneline      //  show cheneges at lineOne on here pc just
+
+git log --oneline origin/main  // show cheneges at lineOne on here pc with server github
+
+git diff origin/main  //  show cheneges at lineOne on server github just
+git diff origin/main..main  // show cheneges at lineOne on server github with pc
+
+git push
+
+
+
+chenege at server:
+
+git fetch  // import cheneges at origin/main just
+
+git diff
+
+git log
+
+git merge  // import cheneges at pc
+
+git log
+
+git pull  // = (git fetch + git merge)
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+github  (origin|master)
+
+Firat create a new repository then the command line
+echo "# laravel_general" >> README.md
+git init
+git add .
+git add README.md
+git commit -m "first Captures"
+git branch -M main
+git remote add origin https://github.com/HumaidHub/Captures.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/humaid2021/laravel_general.git
+git branch -M main
+git push -u origin main
+
+https://github.com/humaid2021/laravel_general.git
+
+git branch -M main

@@ -1,0 +1,21 @@
+node express generator
+
+
+#npm install -g express-generator
+
+express --view=pug generator
+
+cd generator
+
+npm install
+
+DEBUG=generator:* npm start     // On git & liunx
+set DEBUG=myapp:* & npm start   // On Windows Command
+env:DEBUG='myapp:*'; npm start  // On Windows PowerShell
+
+
+
+
+
+
+

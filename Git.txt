@@ -1,0 +1,66 @@
+git (master)
+
+git config 
+
+git config --global user.name "humaid"
+
+git config --list
+
+git config --global user.email "alionlysky448@gmail.com"
+
+
+git init
+
+git add .
+
+git commit -m "this is Captures"
+
+git log
+
+git log -n3     // number view edites.
+
+git log --until=2021-14-6   //searsh in log to this date.
+
+git log --since=2021-14-5
+
+git log --author="humaid"   //searsh by the chenge humaid.
+
+git log --grep="first"   // searsh in commit.
+
+chenge in any files. //new the chenge at mylocale git.
+
+git status   // show any chenges. 
+git add .  // you  must write the code after code status to send the chenge at staged. 
+git commit -m "my file chenge lay"  // new don send commit whit file the chenge All Don.
+
+
+git diff  // show any chenges with details.
+
+git diff ali.txt  // show the chenge at file ali.txt
+
+git diff --color-words ali.txt  // show the chenge at file ali.txt with color birth
+
+git add .
+
+git diff --staged   // show any chenges there at staged.
+ 
+git status
+git commit -m "any things"  
+git status     //god
+
+git rm myFile.txt         //delete file.
+
+git mv 22.txt 22new.txt   // rename file.
+
+mkdir Allii   // new create folder
+git mv 22newName.txt Allii/22newName.txt  // move to folder named:Allii
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+Angular problems
+
+npm config set legacy-peer-deps true
+
+npm i --legacy-peer-deps
+
+yarn install
+npm start
+npm audit fix --force
+
+npm install --force
+
+
+
+
+
+
+
+

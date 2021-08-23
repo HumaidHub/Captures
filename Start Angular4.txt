@@ -1,0 +1,37 @@
+Start Angular4
+
+
+npm install -g @angular/cli
+
+#npm install @angular/cli   //install only in folder Do.
+
+ng new my-app
+
+cd my-app
+ng serve --open
+
+#npm install  // fix
+
+ng g component my-new-component
+
+#ng g component components/my-new-component   // add folder components
+
+#ng g component components/events
+
+#ng g component components/myforms
+
+ng generate service hero
+
+#ng generate service services/hero
+
+
+
+
+
+
+
+
+
+
+
+

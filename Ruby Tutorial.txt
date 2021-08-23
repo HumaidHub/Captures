@@ -1,0 +1,192 @@
+Ruby Tutorial
+
+irb
+
+
+irb(main):008:0> num=[32, 44,3,1,5]
+=> [32, 44, 3, 1, 5]
+
+irb(main):009:0> num
+=> [32, 44, 3, 1, 5]
+
+irb(main):010:0> num.sort
+=> [1, 3, 5, 32, 44]
+
+irb(main):011:0> num<<7
+=> [32, 44, 3, 1, 5, 7]
+
+irb(main):012:0> num.push(455)
+=> [32, 44, 3, 1, 5, 7, 455]
+
+irb(main):021:0> num.delete_at(6)
+=> 455
+
+irb(main):022:0> num.delete(44)
+=> 44
+
+irb(main):023:0> num
+=> [32, 3, 1, 5, 7]
+
+irb(main):027:0> num<<7
+=> [32, nil, 1, 5, 7, 7]
+
+irb(main):028:0> num.uniq
+=> [32, nil, 1, 5, 7]
+
+irb(main):030:0> num
+=> [32, nil, 1, 5, 7, 7]
+
+irb(main):031:0> num.pop
+=> 7
+
+irb(main):032:0> num
+=> [32, nil, 1, 5, 7]
+
+irb(main):033:0> num.to_s
+=> "[32, nil, 1, 5, 7]"
+
+irb(main):034:0> x="my name is humaid"
+=> "my name is humaid"
+
+irb(main):035:0> x.split(' ')
+=> ["my", "name", "is", "humaid"]
+
+irb(main):036:0> x.split('m')
+=> ["", "y na", "e is hu", "aid"]
+
+irb(main):039:0> y=x.split(' ')
+=> ["my", "name", "is", "humaid"]
+
+irb(main):040:0> y.join('-')
+=> "my-name-is-humaid"
+
+
+
+## HASH MAP
+
+irb(main):050:0> info={'name' => 'Humaid manssor', 'age' => 23}
+=> {"name"=>"Humaid manssor", "age"=>23}
+
+irb(main):051:0> info['name']
+=> "Humaid manssor"
+
+irb(main):052:0> info1={:name => 'Humaid salah', :age => 30 }
+=> {:name=>"Humaid salah", :age=>30}
+
+irb(main):053:0> info.keys
+=> ["name", "age"]
+
+irb(main):054:0> info.values
+=> ["Humaid manssor", 23]
+
+irb(main):055:0> info1.values
+=> ["Humaid salah", 30]
+
+irb(main):058:0> info.to_a
+=> [["name", "Humaid manssor"], ["age", 23]]
+
+
+
+## Constant
+
+irb(main):059:0> persoen=21
+=> 21
+
+irb(main):060:0> Persoen=10
+=> 10
+
+irb(main):061:0> Persoen=14
+(irb):61: warning: already initialized constant Persoen
+(irb):60: warning: previous definition of Persoen was here
+=> 14
+
+irb(main):070:0> x=1..10
+=> 1..10
+irb(main):071:0> x.begin
+=> 1
+irb(main):072:0> x.end
+=> 10
+irb(main):073:0> y=1...10
+=> 1...10
+irb(main):074:0> y.begin
+=> 1
+irb(main):075:0> y.end
+=> 9
+irb(main):076:0> x.include?(10)
+=> true
+irb(main):077:0> y.include?(10)
+=> false
+
+
+## Conditionals
+
+x=4
+case x
+when 3
+  puts('no value right')
+when 4
+  puts('yes this is Right val')
+end
+
+
+
+y=5
+if y==4
+  puts('is this Wrong')
+else
+  puts('yes this is 5')
+end
+
+x=4
+unless x ==3
+  puts('is this Wrong')
+else
+  puts('yes this is 4')
+end
+
+
+
+
+num=2
+while num<9
+  num +=1
+  puts num
+end
+
+num2=1
+until num2>8
+  num2 +=1
+  puts num2
+end
+
+
+
+n=3
+begin
+  puts n
+  n+=1
+end while n==3
+#end while n<8
+#end until n<8
+puts "Done"
+ 
+ 
+$num2=1    #this is globle
+until num2>8
+  $num2 +=1
+  puts num2
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+

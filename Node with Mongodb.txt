@@ -1,0 +1,36 @@
+Node with Mongodb
+
+
+npm init --yes
+
+npm i mongoose
+
+npm i nodemon --save-dev
+
+
+npm i joi
+
+npm i -g npm
+npm i --save lodash
+
+npm i bcrypt
+
+npm i jsonwebtoken
+
+npm install express-async-errors --save
+
+{
+mongod
+}
+
+npm i winston
+
+npm i winston-mongodb -> use find.....  ,true
+
+npm i compression
+
+
+
+
+
+

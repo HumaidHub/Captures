@@ -1,0 +1,74 @@
+Node Basic
+
+
+npm i mongoose
+https://www.npmjs.com/package/mongoose
+
+npm list  // list package the install ON project
+
+npm list --depth=0   // list package the install ON project
+npm list --depth=1   // list all package the here ON project
+
+npm view mongoose dependencies   // views mongoose dependencies 
+
+#npm i express@4.16.4   // install version 4.16.4
+
+npm outdated    // check  the version old 
+
+npm update   // update at version(fales,true,true)
+
+npm install  // upgreade at version(true,true,true)
+
+npm i nodemon --save-dev  // refreash the server then any cheneg at project 
+
+npm install -g nodemon
+
+npm i jshint --save-dev   // JSHint is a community-driven tool that detects errors and potential problems in JavaScript code
+
+npm un nodemon   // uninstall(remove)
+
+npm i underscore --save-dev  // important Amazing
+
+npm i joi  // The most powerful schema description language and data validator for JavaScript.
+
+npm install helmet --save
+  //  Helmet helps you secure your Express apps by setting various HTTP headers
+
+npm i morgan   //  HTTP request logger middleware
+
+export NODE_ENV=production  //  تحويل لبيه المونتج
+
+export NODE_ENV=development  //  تحويل لبيه التطوير
+
+npm i lodash   // Automated browser & CI test runs are available.
+
+npm i bcrypt   //  A library to help you hash passwords
+
+npm i jsonwebtoken  
+
+npm i jsonwebtokencli  
+
+npm i express-async-errors
+
+npm i winston  //  A logger for just about everything.
+
+npm i winston-mongodb   //  A MongoDB transport for winston.
+
+npm i compression  //  Node.js compression middleware
+
+#important
+project node with heroku
+package.json add line 
+  "scripts": {
+    "start": "node index.js"
+  },
+node --version result = 12.21.0
+and
+ "engines": {
+    "node": "12.21.0"
+  },  
+create file  .gitignore
+
+herku logs
+
+

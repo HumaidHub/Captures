@@ -1,0 +1,95 @@
+
+start Laravel with Heroku API
+
+composer create-project laravel/laravel lav_api
+
+composer require laravel/passport
+
+git init
+
+git add .
+
+git commit -m "new laravel project"
+
+echo "web: vendor/bin/heroku-php-apache2 public/" > Procfile
+
+git add .
+
+git commit -m "Procfile for Heroku"
+
+heroku create lavapi
+
+php artisan key:generate --show      // show key 
+
+heroku config:set APP_KEY=
+
+git push heroku master
+
+heroku open
+
+##ClearDB MySQL
+heroku config | grep CLEARDB_DATABASE_URL   //show User:Pass@URL
+
+URL: us-cdbr-east-04.cleardb.com
+namedatabase : heroku_b97b4c87202b951
+Username : b07c72097a9635
+Password : 500adb86
+
+
+       'mysql' => [
+            'driver' => 'mysql',
+            'host' => 'us-cdbr-east-04.cleardb.com',
+
+            'database' => 'heroku_b97b4c87202b951',
+            'username' => 'b07c72097a9635',
+            'password' => '500adb86',
+
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            
+        ],
+
+
+Must:  Add code= Schema::defaultStringLength(190);
+       IN here:   E:\2222\hello_laravel_heroku3_Copy\app\Providers\AppServiceProvider.php
+	   
+
+php artisan migrate
+
+php artisan passport:install
+
+## Copy:
+Encryption keys generated successfully.
+Personal access client created successfully.
+Client ID: 5
+Client secret: cbpTDvdW8Eve5b8TTzYGNivQs6mHL93GYDMTdKGF
+Password grant client created successfully.
+Client ID: 15
+Client secret: B9bjDCr56HTv48Qj7ITFMZFBidj5VPWR2RlbOujf
+
+php artisan make:model Book -mc     //model_migration_controller
+
+php artisan migrate
+
+
+php artisan passport:install --uuids
+
+Personal access client created successfully.
+Client ID: 93cd2da0-4444-486c-a47a-77a56f45aa4a
+Client secret: XY14VkcxgBZc6qNqPDS1gL0yiXsJRIf3kW0u1wAc
+Password grant client created successfully.
+Client ID: 93cd2da0-4ea1-4a99-97e4-c355dd14071b
+Client secret: YQqW8mvHnbycz4HQqQ4CPxlkToadil4g1Oq4OaOp
+
+
+
+
+
+
+
+
+
+

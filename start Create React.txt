@@ -1,0 +1,12 @@
+start Create React
+
+
+npx create-react-app my-app
+
+cd my-app
+
+npm start
+
+code .   //open Visual Studio Code
+
+

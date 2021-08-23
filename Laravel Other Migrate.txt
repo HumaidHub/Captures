@@ -1,0 +1,169 @@
+
+
+composer create-project laravel/laravel example-app
+
+cd example-app
+
+php artisan serve
+
+php artisan make:migration create_peoples
+
+php artisan migrate
+
+php artisan migrate:rollback
+
+php artisan migrate:refresh
+
+php artisan migrate:reset
+
+php artisan migrate --force
+
+php artisan migrate:status
+
+
+php artisan make:controller adminController
+
+php artisan make:migration create_products    //  must at migration name first charcter small and add charcter (s).
+php artisan make:model Product    //   must at model name first charcter big.
+
+
+
+composer require laravel/ui --dev
+
+composer require laravel/ui
+
+php artisan ui vue --auth
+
+php artisan ui:auth
+
+php artisan ui bootstrap --auth
+
+php artisan ui react --auth
+
+npm install
+npm run dev
+
+
+laravel new project --jet
+Old:
+laravel new project --auth
+
+laravel new my-test-app --auth
+
+Laravel new my-test-app
+cd my-test-app
+
+
+
+composer require laravel/breeze --dev
+
+php artisan breeze:install
+
+npm install laravel-mix@latest --save-dev
+npm cache verify
+
+npm audit fix
+
+npm audit fix --force
+
+npm install laravel-mix@latest
+npm clean-install
+
+rm -rf node_modules
+npm install
+
+
+
+npm -v
+npm install -g npm@latest
+npm install -g npm@next
+
+npm i --save-dev laravel-mix@latest && 
+npm i --save-dev sass-loader@latest && 
+npm i --save-dev postcss@latest && 
+npm i --save-dev webpack@latest
+
+npx mix -p
+or
+npm run prod
+
+
+
+Step1: composer update
+Step2: rm -rf node_modules
+Step3: npm cache clean
+Step4: npm install
+Step5: npm outdated
+Step6: npm install
+Step7: npm run dev
+
+
+
+npm install --global cross-env
+npm install --no-bin-links
+npm run development
+
+
+
+
+npm install
+npm run dev
+php artisan migrate
+
+
+php artisan breeze:install vue
+
+// Or...
+
+php artisan breeze:install react
+
+
+./sail node -v
+./sail npm -v
+
+node -v
+npm -v
+
+npm run watch
+
+npm run watch-poll
+
+
+rm -rf node_modules
+rm package-lock.json yarn.lock
+npm cache clear --force
+npm install --global cross-env
+npm install
+
+
+npm install cross-env
+npm install 
+npm run dev
+
+
+Run as Administrator
+netsh winhttp show proxy
+ipconfig /all
+netstat -ban
+
+
+first add this:
+- npm config set registry http://registry.npmjs.org/
+
+If your organization use proxy , add proxy :
+
+- npm config set proxy "http://username:password@proxy-url:proxy-port"
+
+- npm config set https-proxy "http://username:password@proxy-url:proxy-port"
+
+
+
+inetcpl.cpl
+
+
+
+
+
+
+
+

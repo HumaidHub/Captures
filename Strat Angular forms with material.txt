@@ -1,0 +1,23 @@
+Strat Angular forms with material
+
+
+create:my-app
+ng new my-app
+
+install:material
+ng add @angular/material
+https://material.angular.io/guide/getting-started
+
+
+create:forms
+https://github.com/humaid2021/reactive-form-tutorial-series
+
+
+npm install --save @angular/material @angular/cdk @angular/animations
+
+npm install --save -g @angular/material @angular/cdk @angular/animations
+
+
+
+
+

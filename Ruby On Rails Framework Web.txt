@@ -1,0 +1,80 @@
+Ruby On Rails Framework Web
+
+## gem install rails
+## rails --version
+## node --version
+## yarn --version
+## mysql --version 
+## 0.5.3
+## gem install mysql2 -v '0.5.3'
+
+
+rails new blog2
+
+bundle install
+
+rails server
+
+##gem list
+{
+
+#1
+(5).times do
+  #blck of code
+  puts "hi times"
+end
+#2
+1.upto(5) do |i|
+  #blck of code
+  puts "upto #{i}"
+end
+#2
+5.downto(1) do |i|
+  #blck of code
+  puts "downto #{i}"
+end
+
+
+#3
+(1..10).each{ |i|
+  #blck of code
+  puts "each #{i}"
+}
+for account_type in accounts
+  puts account_type
+end
+
+load 'class_simple.rb'
+
+
+class Animals
+end
+
+class Dog< Animals
+  attr_accessor :owner
+
+  def get_owner
+    return @owner
+  end
+end
+
+
+# var  //local
+# $var   // global
+# @var  // instance of class
+# @@var  // of class
+
+owner1=Car.new("hussein","totytoal 2016")
+  owner1.get_car_info
+}
+
+
+rails generate scaffold User name:string email:string
+
+
+
+
+
+
+
+

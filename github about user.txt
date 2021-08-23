@@ -1,0 +1,35 @@
+github  (origin|master)
+
+
+git remote  //show any origin here 
+
+git remote add origin https://github.com/humaid2021/laravel_general
+
+git remote
+
+git remote -v   // show code do with origin
+
+git remote rm origin    //delete origin
+
+git branch   //show Useres
+
+git branch -r  //show Useres with remote
+
+git branch -a //show all
+
+git branch -M main
+
+
+git checkout -b correct  // create branch 
+
+git checkout main  // useing user 'main'
+
+
+
+
+
+
+
+
+
+
